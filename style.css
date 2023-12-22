@@ -9,7 +9,7 @@ body{
     align-items: center;
 }
 #calculator-app{
-    width: 440px;
+    width: 400px;
     background: hsl(0, 0%, 30%);
     padding: 20px;
     border-radius: 10px;
@@ -26,7 +26,7 @@ body{
     font-weight: bold;
 }
 .calc-name{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     margin: 20px 0 0 0px;
     color: white;
@@ -36,8 +36,17 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    max-width: 400px;
+    column-gap: 10px;
+    justify-content: center;
+    max-width: 385px;
     padding: 20px;
+}
+#keys1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 385px;
+    padding: 0px 20px;
 }
 .operator-btn{
     background: hsl(39, 100%, 55%);
@@ -66,10 +75,25 @@ button:active{
     background: hsl(0, 0%, 60%);
 }
 .clear-btn{
-    width: 280px;
-    margin-left: 20px;
+    width: 260px;
 }
 .name-btn{
-    margin-left: 24px;
     background: hsl(120, 100%, 45%);
+}
+@media (min-width: 420px) and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+        background: hsl(0, 0%, 20%);
+    }
+    #calculator-app{
+        width: 350px;
+        overflow-x: hidden;
+    }
+    #keys1{
+        gap: 10px;
+        padding: 0px 10px;
+    }
+    .clear-btn{
+        width: 245px;
+    }
 }
