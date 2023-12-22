@@ -1,0 +1,75 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator-app{
+    width: 440px;
+    background: hsl(0, 0%, 30%);
+    padding: 20px;
+    border-radius: 10px;
+}
+#display{
+    width: 90%;
+    padding: 20px;
+    font-size: 50px;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: hsl(0, 0%, 20%);
+    color: white;
+    font-weight: bold;
+}
+.calc-name{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0 0 0px;
+    color: white;
+    text-align: center;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    padding: 20px;
+}
+.operator-btn{
+    background: hsl(39, 100%, 55%);
+}
+.operator-btn:hover{
+    background: hsl(39, 100%, 60%);
+}
+.operator-btn:active{
+    background: hsl(39, 100%, 65%);
+}
+button{
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    background: hsl(0, 0%, 40%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background: hsl(0, 0%, 50%);
+}
+button:active{
+    background: hsl(0, 0%, 60%);
+}
+.clear-btn{
+    width: 280px;
+    margin-left: 20px;
+}
+.name-btn{
+    margin-left: 24px;
+    background: hsl(120, 100%, 45%);
+}
