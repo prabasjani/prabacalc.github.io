@@ -10,6 +10,7 @@ function appendToDisplay(keys) {
 
 function clearScr(){
     display.value = '';
+    display.style.color = 'white';
     nameBtn.style.background = 'hsl(120, 100%, 45%)';
     calcName.innerHTML = "Prabanjan's Calc ";
     calcName.style.color = 'white';
